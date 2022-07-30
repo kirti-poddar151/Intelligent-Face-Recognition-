@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_register"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context=".RegisterActivity">
+
+    <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startbutton"
+            android:onClick="goRegisterCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"/>
+
+    <Button
+            android:text="Take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:id="@+id/takePhotoButton"
+            android:visibility="invisible"
+            android:onClick="takePhoto"/>
+
+    <ImageView
+            android:layout_marginBottom="36dp"
+            android:id="@+id/faceimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"/>
+           <!-- android:layout_above="@+id/takePhotoButton"
+           -->
+
+
+</RelativeLayout>
